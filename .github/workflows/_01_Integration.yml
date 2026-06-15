@@ -1,0 +1,13 @@
+name: 01 Integration
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Test_Back_Front:
+    uses: ./.github/workflows/_01-1_TestBackFront.yml
+
+  # Quality_Sonarcube:
+
+  # Security_Snyk:
