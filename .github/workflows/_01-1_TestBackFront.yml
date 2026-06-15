@@ -46,10 +46,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: init bdd:
+      - name: init bdd
         run: npm run initbdd
 
-      - name: populate bdd:
+      - name: populate bdd
         run: |
           mysql -u root -ptoor --host 127.0.0.1 --port 3306 --database base < ./test/insert_test_user.sql
 
